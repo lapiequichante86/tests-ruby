@@ -27,18 +27,21 @@ def power (b,c)
 	return b**c
 end
 
-def factorial (a)
-	fact = 1
-if a > 0
-	while a > 0
-	fact = fact * a
-	end 
-	return fact
-	elsif a == 0
+#ne fonctionne pas 
+	def factorial (a)
+		fact = 1
+		if a > 0
+			while a > 0
+			fact = fact * a
+			end 
 		return fact
-	elsif a < 0
-		return nil 
+				elsif a < 0
+			return fact
+			end
+			else a == 0 
+			return nil 
+		end
+		
 	end 
-end 
 			
 	 	 
